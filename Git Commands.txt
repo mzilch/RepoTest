@@ -1,0 +1,220 @@
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git add test.txt
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git commit -m "Added test.txt"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git commit -m "added test.txt"
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.email "mzilch@gmail.com"
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git config --glabal user.name "Mark Zilch"
+error: unknown option `glabal'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.name "Mark Zilch"
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git commit -m "added test.txt"
+[master (root-commit) 99bdf89] added test.txt
+ 1 file changed, 10 insertions(+)
+ create mode 100644 test.txt
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ dir> index.html
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git commit -m "Added index.html | modified test.txt"
+[master 6b15df5] Added index.html | modified test.txt
+ 2 files changed, 4 insertions(+)
+ create mode 100644 index.html
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ $ git remote add origin
+bash: $: command not found
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ $ git remote add origin
+bash: $: command not found
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git remote add origin https://github.com/mzilch/RepoTest.git
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 726 bytes | 242.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/mzilch/RepoTest.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.name "mzilch"
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git config --global user.email "mzilch@gmail.com"
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ git log
+commit 6b15df51f6d8d75977f16ce012541f63902c3b3e (HEAD -> master, origin/master)
+Author: Mark Zilch <mzilch@gmail.com>
+Date:   Fri Sep 11 15:06:53 2020 -0400
+
+    Added index.html | modified test.txt
+
+commit 99bdf89b69d1e922625286048325e31d7dc19693
+Author: Mark Zilch <mzilch@gmail.com>
+Date:   Fri Sep 11 14:55:03 2020 -0400
+
+    added test.txt
+
+HPPro600SFFW7P64@MARK-HP MINGW64 ~/Desktop/MyProject (master)
+$ a
