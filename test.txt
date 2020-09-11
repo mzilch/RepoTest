@@ -1,0 +1,10 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 88C0-234E
+
+ Directory of C:\Users\HPPro600SFFW7P64\Desktop\MyProject
+
+09/11/2020  02:46 PM    <DIR>          .
+09/11/2020  02:46 PM    <DIR>          ..
+09/11/2020  02:46 PM                 0 test.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  836,555,091,968 bytes free
